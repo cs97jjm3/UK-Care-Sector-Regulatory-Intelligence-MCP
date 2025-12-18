@@ -1,0 +1,59 @@
+{
+  "manifest_version": "0.1",
+  "name": "uk-care-regulatory-intelligence",
+  "display_name": "UK Care Regulatory Intelligence",
+  "version": "1.0.0",
+  "description": "Track UK care sector regulatory changes and compliance requirements",
+  "long_description": "Automated intelligence gathering on UK care sector regulatory changes, including Gov.uk publications, Parliamentary activity, and compliance deadlines. Monitors DHSC and CQC guidance to keep product roadmaps aligned with regulatory requirements.",
+  "author": {
+    "name": "James",
+    "email": "murrell.james@gmail.com",
+    "url": "https://github.com/cs97jjm3"
+  },
+  "homepage": "https://github.com/cs97jjm3/uk-care-regulatory-intelligence",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cs97jjm3/uk-care-regulatory-intelligence"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "keywords": [
+    "healthcare",
+    "regulatory",
+    "compliance",
+    "uk",
+    "cqc",
+    "dhsc",
+    "care-sector"
+  ],
+  "server": {
+    "type": "node",
+    "entry_point": "index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/index.js"],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "search_publications",
+      "description": "Search Gov.uk for regulatory publications, guidance, and policy documents from DHSC and CQC"
+    },
+    {
+      "name": "get_parliamentary_questions",
+      "description": "Track written parliamentary questions and answers about the care sector from DHSC"
+    },
+    {
+      "name": "get_regulatory_calendar",
+      "description": "Find upcoming regulatory changes, consultations, and compliance deadlines"
+    },
+    {
+      "name": "generate_monthly_digest",
+      "description": "Generate comprehensive monthly intelligence report covering all sources"
+    }
+  ],
+  "compatibility": {
+    "platforms": ["win32", "darwin", "linux"]
+  }
+}

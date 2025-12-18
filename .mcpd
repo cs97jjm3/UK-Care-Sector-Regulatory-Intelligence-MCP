@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "uk-care-regulatory-intelligence": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\james\\Documents\\UK Care Sector Regulatory Intelligence MCP\\index.js"
+      ],
+      "disabled": false,
+      "alwaysAllow": []
+    }
+  }
+}
